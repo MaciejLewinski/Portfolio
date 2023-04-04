@@ -3,7 +3,7 @@
 // ----------------------------------------------------------
 
 <div class="box">
-            <h1>Dziś jest <span class="current-day"></span>!</h1>
+            <h1>Today is <span class="current-day"></span>!</h1>
             <p class="fun-fact"></p>
         </div>
 
@@ -14,27 +14,40 @@
 const currentDay = document.querySelector('.current-day')
 const funFact = document.querySelector('.fun-fact')
 
-// To be replaced by API in future
-
-const facts = [
-    'Krokodyl nie potrafi wystawić języka.',
-    'Każdy człowiek spędził około pół godziny jako pojedyncza komórka.',
-    'Dźwięk przemieszcza się 15 razy szybciej przez stal niż przez powietrze.',
-    'Leniwce potrzebują dwóch tygodni na strawienie jedzenia.',
-    'Goryle śpią nawet czternaście godzin dziennie.',
-    'Język kameleona jest dwukrotnie dłuższy od jego ciała.',
-    'Chińczycy w ciągu roku zużywają około 80 miliardów pałeczek.',
-    'Żeby wejść na Wieżę Eiffla trzeba pokonać aż 1710 stopni.'
-]
+const API_LINK = 'https://uselessfacts.jsph.pl/api/v2/facts/random'
 
 const day = new Date()
-currentDay.textContent = day.toLocaleString("pl", {weekday:"long"})
+currentDay.textContent = day.toLocaleString("en", {weekday:"long"})
 
-const showRandom = () => {
-    const number = Math.floor(Math.random() * (facts.length - 1))
-    funFact.textContent = facts[number]
+const randomFunFact = ()=> {
+     
+    axios
+    .get(API_LINK)
+    .then((res) => {
+        const randomFact = res.data.text;
+        funFact.textContent = randomFact
+    })
 }
-showRandom ()
+
+randomFunFact()
+
+// Replaced by API
+// const facts = [
+//     'Krokodyl nie potrafi wystawić języka.',
+//     'Każdy człowiek spędził około pół godziny jako pojedyncza komórka.',
+//     'Dźwięk przemieszcza się 15 razy szybciej przez stal niż przez powietrze.',
+//     'Leniwce potrzebują dwóch tygodni na strawienie jedzenia.',
+//     'Goryle śpią nawet czternaście godzin dziennie.',
+//     'Język kameleona jest dwukrotnie dłuższy od jego ciała.',
+//     'Chińczycy w ciągu roku zużywają około 80 miliardów pałeczek.',
+//     'Żeby wejść na Wieżę Eiffla trzeba pokonać aż 1710 stopni.'
+// ]
+
+// const showRandom = () => {
+//     const number = Math.floor(Math.random() * (facts.length - 1))
+//     funFact.textContent = facts[number]
+// }
+// showRandom ()
 
 
 // ----------------------------------------------------------
