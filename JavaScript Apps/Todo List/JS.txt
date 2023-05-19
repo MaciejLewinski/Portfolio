@@ -1,0 +1,129 @@
+// Wpisywanie treści zadania
+let todoInput;
+// info o braku zadań / konieczności wpisania tekstu
+let errorInfo;
+// przycisk ADD dodający elementy
+let addBtn;
+// lista zadań
+let ulList;
+
+let popup; // popup window do edycji
+let popupInfo; // tekst w popupie jeżeli nie będzie tekstu
+let todoToEdit; // edytowany Todo item
+let popupInput; // input w popupie
+let popupAddBtn; // button "zatwierdz"
+let popupCloseBtn; // button "anuluj"
+
+const main = () => {
+	prepareDOMElements();
+	prepareDOMEvents();
+};
+// FUNKCJA POBIERAJĄCA ELEMENTY
+
+const prepareDOMElements = () => {
+	todoInput = document.querySelector(".todo-input");
+	errorInfo = document.querySelector(".error-info");
+	addBtn = document.querySelector(".btn-add");
+	ulList = document.querySelector(".todolist ul");
+	popup = document.querySelector(".popup");
+	popupInfo = document.querySelector(".popup-info");
+	popupInput = document.querySelector(".popup-input");
+	popupAddBtn = document.querySelector(".accept");
+	popupCloseBtn = document.querySelector(".cancel");
+};
+// FUNKCJA NADAJĄCA NASŁUCHIWANIE
+
+const prepareDOMEvents = () => {
+	addBtn.addEventListener("click", addNewTask);
+	ulList.addEventListener("click", checkClick);
+	popupCloseBtn.addEventListener("click", closePopup);
+	popupAddBtn.addEventListener('click', changeTodoText)
+	todoInput.addEventListener('keyup', enterKeyCheck)
+};
+
+//FUNCKJA DODAJĄCA NOWE ZADANIE
+
+const addNewTask = () => {
+	if (todoInput.value !== "") {
+		const newTodo = document.createElement("li");
+		newTodo.textContent = todoInput.value;
+		ulList.append(newTodo);
+		createToolsArea(newTodo);
+		todoInput.value = "";
+		errorInfo.textContent = "";
+	} else {
+		errorInfo.textContent = "Wpisz treść zadania";
+	}
+};
+
+//FUNKCJA DODAJĄCA PRZYCISKI AKCJI DO NOWEGO ZADANIA
+
+const createToolsArea = (newTodo) => {
+	const toolPanel = document.createElement("div");
+	toolPanel.classList.add("tools");
+	newTodo.append(toolPanel);
+
+	const completeBtn = document.createElement("button");
+	completeBtn.classList.add("complete");
+	completeBtn.innerHTML = '<i class="fas fa-check"></i>';
+
+	const editBtn = document.createElement("button");
+	editBtn.classList.add("edit");
+	editBtn.textContent = "EDIT";
+
+	const deleteBtn = document.createElement("button");
+	deleteBtn.classList.add("delete");
+	deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
+
+	toolPanel.append(completeBtn, editBtn, deleteBtn);
+};
+
+// FUNKCJA NADAJĄCA AKCJĘ DO PRZYCISKÓW
+
+const checkClick = (e) => {
+	if (e.target.matches(".complete")) {
+		e.target.closest("li").classList.toggle("completed");
+		e.target.classList.toggle("completed");
+	} else if (e.target.matches(".edit")) {
+		editTodo(e);
+	} else if (e.target.matches(".delete")) {
+		e.target.closest("li").classList.toggle("delete");
+		deleteTodo(e)
+	}
+};
+
+const editTodo = e => {
+	todoToEdit = e.target.closest("li")
+	popupInput.value = todoToEdit.firstChild.textContent
+	popup.style.display = "flex";
+};
+const closePopup = () => {
+	popup.style.display = "none";
+	popupInfo.textContent = ''
+};
+
+const changeTodoText = () => {
+	if(popupInput.value !== ''){
+		todoToEdit.firstChild.textContent = popupInput.value
+		popup.style.display = "none";
+	} else {
+		popupInfo.textContent = 'Musisz podać jakąć treść!'
+
+	}
+}
+
+const deleteTodo = (e) => {
+	e.target.closest('li').remove()
+	const allTodos = ulList.querySelectorAll('li')
+	if(allTodos.length === 0) {
+		errorInfo.textContent = "Brak zadań na liście";
+	} 
+}
+
+const enterKeyCheck = (e) => {
+	if(e.key === 'Enter') {
+		addNewTask()
+	}
+}
+
+document.addEventListener("DOMContentLoaded", main);
