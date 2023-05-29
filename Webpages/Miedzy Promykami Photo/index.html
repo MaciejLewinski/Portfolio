@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Między Promykami Fotografia</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous" />
+		<!-- // FONTS -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Estonia&family=Italianno&family=Moon+Dance&display=swap"
+			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" 
+		    rel="stylesheet">
+
+		<!-- ------------------------------------- -->
+		<script
+			src="https://kit.fontawesome.com/df6568d5e5.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body data-bs-spy="scroll" data-bs-target="navbar-scroll">
+		<nav class="navbar navbar-expand-lg py-3 sticky-top" id="navbar-scroll">
+			<div class="container">
+				<a class="navbar-brand" href="#home"
+					><img
+						class="navLogo"
+						src="/media/NavLogo.png"
+						alt="logo prezentujące lilię" />
+					<span class="logoText">Justyna Marciniszyn-Lewinska</span>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto">
+						<a class="nav-link px-lg-3 active" href="#home">Home</a>
+						<a class="nav-link px-lg-3" href="#Omnie">O mnie</a>
+						<a class="nav-link px-lg-3" href="#realizacje">Realizacje</a>
+						<a class="nav-link px-lg-3" href="#kindwords">Kind words</a>
+						<a class="nav-link px-lg-3" href="#oferta">Poznaj ofertę</a>
+						<a class="nav-link px-lg-3" href="#blog">Blog</a>
+						<a class="nav-link px-lg-3" href="#kontakt">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<section id="home" class="mainLogoBox aboutme-shadow">
+				<div class="container">
+					<h2>Między Promykami Fotografia</h2>
+					<h3 class="logoName">Justyna Marciniszyn-Lewińska</h3>
+				</div>
+			</section>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" 
+			data-bs-pause="hover">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner text-light text-center">
+					<div class="carousel-item carousel-img-one active" data-bs-interval="5000" >
+						<div
+							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+							<p class="display-5">Sesja wizerunkowa</p>
+							<p class="d-none d-sm-block">
+								Otwierasz nowy biznes? Poszukujesz nowej pracy? Zdjęcia z sesji
+								wizerunkowej sprawią, że będziesz wyglądać profesjonalnie!
+							</p>
+						</div>
+						<div class="hero-shadow aboutme-shadow"></div>
+					</div>
+					<div class="carousel-item carousel-img-two" data-bs-interval="5000">
+						<div
+							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+							<p class="display-5">Sesja Narzeczeńska</p>
+							<p class="d-none d-sm-block">
+								Uwiecznij piękne chwile wraz ze swoim partnerem!
+							</p>
+						</div>
+						<div class="hero-shadow"></div>
+					</div>
+					<div class="carousel-item carousel-img-three" data-bs-interval="5000">
+						<div
+							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+							<p class="display-5">Sesja kobieca</p>
+							<p class="d-none d-sm-block">
+								Spraw sobie prezent i uwolnij swoje piękno!
+							</p>
+						</div>
+						<div class="hero-shadow"></div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="home-boxes aboutme-shadow">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-solid fa-handshake" alt="ikona uścisku dłoni"></i>
+							<h3>Oferta i umowa</h3>
+							<p class="m-0 py-2 border-top">
+								Przygotuję dla Ciebie spersonalizowaną ofertę, omawiając
+								większość zaganień sesji. Po akceptacji następuje podpisanie
+								umowy.
+							</p>
+						</div>
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-sharp fa-solid fa-camera-retro" alt="ikona aparatu fotograficznego"></i>
+							<h3>Sesja fotograficzna</h3>
+							<p class="m-0 py-2 border-top">
+								W zależności od oferty, spotykamy się na sesji zdjęciowej.
+							</p>
+						</div>
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-sharp fa-solid fa-panorama" alt="Ikona obrazu"></i>
+							<h3>Obróbka zdjęc</h3>
+							<p class="m-0 py-2 border-top">
+								Czasochłonny proces selekcji zdjęc i wydobycia z nich co
+								najlepsze.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+	<!-- ABOUT ME -->	
+
+			<section id="Omnie" class="aboutme-info aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="row m-0 justify-content-center">
+						<div class="col-lg-3 aboutme-img">
+							<div class="aboutme-leftimg aboutme-up"><img src="./media/siteimages/justynakrolik.jpg" alt="Justyna na zdjęciu ze swoim królikiem"></div>
+							<div class="aboutme-leftimg aboutme-down"><img src="./media/siteimages/justyna2.JPG" alt="Zdjęcie uśmiechniętej Justyny"></div>
+						</div>
+			
+						<img
+							src="./media/siteimages/justyna3.JPG"
+							alt="Czarno-białe zdjęcie Justyny z głową obróconą w lewo"
+							class="d-lg-none aboutme-img-mobile" />
+						<img src="./media/siteimages/justyna3.JPG" alt="Czarno-białe zdjęcie Justyny z głową obróconą w lewo" class="d-none d-lg-block col-lg-4 aboutme-img"">
+
+						<div class="col-lg-3 aboutme-text aboutme-text-right">
+							<h3 class="aboutme-up">Moje cele</h3>
+							<p class="aboutme-up py-2 border-top border-bottom">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Deserunt debitis commodi in officia praesentium hic et facilis
+								ipsum quibusdam omnis.
+							</p>
+							<h3 class="aboutme-down">Moja pasja</h3>
+							<p class="aboutme-down py-2 border-top border-bottom">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Deserunt debitis commodi in officia praesentium hic et facilis
+								ipsum quibusdam omnis.
+							</p>
+						</div>
+					
+					</div>
+				</div>
+			</section>
+
+	<!-- MOJE REALIZACJE -->
+
+			<section id="realizacje" class="py-5 realization aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="py-5 realization-text">
+						<h3 class="subpage-head">Moje realizacje<h3>
+						<p class="subpage-p py-5 border-bottom">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+							fuga rerum, natus impedit expedita vero in numquam earum
+							accusantium hic tempora veniam. Dicta tempore explicabo quam illo
+							soluta unde officiis. Nam autem molestiae aliquid numquam soluta
+							corrupti odit deserunt? Neque!
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="subpages/sesjewizerunkowe.html"><div class="realization-hero-box box-one">
+								<p class="p-3 hero-shadow">Sesje wizerunkowe</p>
+							</div></a>
+						</div>
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="/subpages/lovestory.html"><div class="realization-hero-box box-two">
+								<p class="p-3 hero-shadow">Love story</p>
+							</div></a>
+						</div>
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="/subpages/produktowe.html"><div class="realization-hero-box box-three">
+								<p class="p-3 hero-shadow">Produktowe</p>
+							</div></a>
+						</div>
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="/subpages/kobiece&sensualne.html"><div class="realization-hero-box box-four">
+								<p class="p-3 hero-shadow">Kobiece & Sensualne</p>
+							</div></a>
+						</div>
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="/subpages/reportaz.html"><div class="realization-hero-box box-five">
+								<p class="p-3 hero-shadow">Reportaż</p>
+							</div></a>
+						</div>
+						<div class="col-md-6 mb-4">
+							<a class="realization" href="/subpages/artproject.html"><div class="realization-hero-box box-six">
+								<p class="p-3 hero-shadow">Art project</p>
+							</div></a>
+						</div>
+					</div>
+				</div>
+				<p class="mt-5 text-center">Polecam również swój instagram  <a
+					class="realizationSocials" target=”_blank”
+					href="https://www.instagram.com/miedzy_promykami_fotografia/"
+					><i class="fa-brands fa-instagram"> miedzy_promykami_fotografia</i></a> 
+				</p>
+				<p class="py-3 text-muted text-center border-top fs-6">
+					Zgodnie z Ustawą o Prawie Autorskim i Prawach Pokrewnych z dnia 4 lutego 1994 roku (Dz.U.94 Nr 24 poz. 83, sprost.: Dz.U.94 Nr 43 poz.170) wykorzystywanie autorskich pomysłów, rozwiązań, kopiowanie, rozpowszechnianie zdjęć, fragmentów grafiki, tekstów opisów w celach zarobkowych, bez zezwolenia autora jest zabronione i stanowi naruszenie praw autorskich oraz podlega karze. Znaki towarowe i graficzne są własnością odpowiednich firm i/lub instytucji. </p>
+			</section>
+
+	<!-- KIND WORDS -->
+
+			<section id="kindwords" class="py-5 kindwords aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="py-5 kindwords-text">
+						<h3 class="subpage-head">Kind Words<h3>
+						<p class="subpage-p pb-5 border-bottom">
+							Co mówią moi klienci?
+						</p>
+					</div>
+				</div>	
+				<div class="container mb-4 p-4">
+					<div id="carouselExample"
+							 class="carousel slide" 
+							 data-bs-ride="carousel" 
+							 data-bs-pause="hover">
+							<div class="carousel-kindwords carousel-inner text-center pb-5 border-bottom">
+								<div class="carousel-item active h-auto"
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis quod porro excepturi iure veritatis.</p>
+									 <p>~</p>
+									 <h5>
+										 Gosia
+									</h5>
+									
+								</div>
+								<div class="carousel-item h-auto"
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fugiat impedit saepe animi omnis aliquid modi dicta assumenda, mollitia provident? Quasi quos dicta magnam impedit amet necessitatibus architecto, fuga accusamus?</p>
+									 <p>~</p>
+									 <h5>
+										Magda
+									</h5>
+								</div>
+								<div class="carousel-item h-auto" 
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil minima ipsa deleniti repudiandae magni molestias impedit facilis delectus architecto tenetur quibusdam numquam libero nisi, optio accusantium expedita illum iste quidem amet deserunt velit! Corrupti suscipit distinctio neque animi veritatis voluptatem mollitia magnam perferendis consequuntur est.</p>
+									 <p>~</p>
+									 <h5>
+									Ola & Sebastian
+									</h5>
+								</div>
+						</div>
+					</div>
+				</div>		
+			</section>
+
+	<!-- OFERTA -->
+
+		<section id="oferta" class="py-5 offer aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="py-5 offer-text">
+						<h3 class="subpage-head">Poznaj Ofertę<h3>
+						<p class="subpage-p pb-5 border-bottom">
+							Spotkajmy się na wspólnej sesji!
+						</p>
+					</div>	
+				<div class="container text-center">	
+					<div class="row gap-5 justify-content-center">
+							<div class="offer card" style="width: 18rem;">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Oferta podstawowa</h5>
+								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</div>
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">An item</li>
+								  <li class="list-group-item">A second item</li>
+								  <li class="list-group-item">A third item</li>
+								</ul>
+								<div class="card-body">
+									<button class="btn btn-secondary"><a href="/Files/SESJA WIZERUNKOWA MARKI_OFERTA PREMIUM 2023.pdf" download="Oferta 2023 - Justyna Marciniszyn-Lewińska" class="card-link">Pobierz ofertę</a></button>
+								  
+								</div>
+							  </div>
+							  <div class="offer card" style="width: 18rem;">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</div>
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">An item</li>
+								  <li class="list-group-item">A second item</li>
+								  <li class="list-group-item">A third item</li>
+								</ul>
+								<div class="card-body">
+									<button class="btn btn-secondary"><a href="/Files/SESJA WIZERUNKOWA MARKI_OFERTA PREMIUM 2023.pdf" download="Oferta 2023 - Justyna Marciniszyn-Lewińska" class="card-link">Pobierz ofertę</a></button>
+								  
+								</div>
+							  </div>
+							  <div class="offer card" style="width: 18rem;">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</div>
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">An item</li>
+								  <li class="list-group-item">A second item</li>
+								  <li class="list-group-item">A third item</li>
+								</ul>
+								<div class="card-body">
+									<button class="btn btn-secondary"><a href="/Files/SESJA WIZERUNKOWA MARKI_OFERTA PREMIUM 2023.pdf" download="Oferta 2023 - Justyna Marciniszyn-Lewińska" class="card-link">Pobierz ofertę</a></button>
+								
+								</div>
+							  </div>
+						
+					</div>
+				</div>
+		</section>
+
+	<!-- BLOG -->
+
+		<section id="blog" class="py-5 blog aboutme-shadow border-top border-bottom">
+			<div class="container">
+				<div class="py-5 blog-text">
+					<h3 class="subpage-head">Blog<h3>
+					<p class="subpage-p pb-5 border-bottom">
+						Sprawdź najnowsze wpisy!
+					</p>
+				</div>
+				<div class="blog container ct-u-paddingTop40 ct-u-paddingBottom100">
+					<div class="row">
+					  <div class="col-md-12 ct-content">
+						<div class="container">
+						  <div class="row">
+							<div class="col-md-12">
+							  <div id="theBlogGrid">
+								<ul class="row blogGrid" id="blogGrid">
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
+									<div class="imgHolder blog-box blog-one" onclick="location.href=''">
+									 
+									  <div class="description-box animateBottomName">
+										<p>Uwiecznione pierwsze oznaki wiosny</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="20">
+									<div class="imgHolder blog-box blog-two" onclick="location.href=''">
+									 
+									  <div class="description-box animateBottomName">
+										<p>Przyroda w Ogrodzie Botanicznym</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="19">
+									<div class="imgHolder blog-box blog-three" onclick="location.href=''">
+									  
+									  <div class="description-box animateBottomName">
+										<p>Poranek w Chrząstawie Małej</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="18">
+									<div class="imgHolder blog-box blog-four" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
+									 
+									  <div class="description-box animateBottomName">
+										<p>Spacer z mężem</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								</ul>
+								<div class="blue-border blog-blue-border"></div>
+								<div class="clearfix"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				
+
+
+
+			</div>
+		</section>
+		
+	<!-- KONTAKT -->
+
+		<section id="kontakt" class="py-5 blog aboutme-shadow border-top border-bottom">
+			<div class="container">
+				<div class="py-5 blog-text">
+					<h3 class="subpage-head">Kontakt<h3>
+					<p class="subpage-p pb-5 border-bottom">
+						Wypełnij formularz, napisz E-mail lub zadzwoń!
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-lg-4">
+						<div class="border p-5 mb-4 text-center">
+							<h4 class="contact fw-bold">Dane kontaktowe</h4>
+							
+							<!-- <p class="mt-4 fw-bold text-uppercase">Adres</p>
+							<p>ul. Sąsiedzka 33B</p>
+							<p>55-003 Chrząstawa Mała</p> -->
+							<!-- <p class="mt-4 fw-bold text-uppercase">Telefon</p>
+							<p>+48 570 971 398</p> -->
+							<p class="mt-4 fw-bold text-uppercase">e-mail</p>
+							<p>miedzypromykami.fotografia</p>
+							<p>@gmail.com</p>
+
+						</div>
+					</div>
+					<div class="col-md-7 col-lg-8">
+						<div class="border p-5 text-center">
+							<h4 class="contact fw-bold">Formularz kontaktowy</h4>
+							<form class="mt-5">
+								<div class="contact row">
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Imię i Nazwisko</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Adres mailowy</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Telefon</label>
+											<input type="tel" class="form-control" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Jaka sesja Cię interesuje</label>
+											<select class="form-select">
+												<option selected></option>
+												<option>Sesja wizerunkowa</option>
+												<option>Love Story</option>
+												<option>Produktowa</option>
+												<option>Kobieca/Sensualna</option>
+												<option>Reportaż</option>
+												<option>Art Project</option>
+												<option>Więcej niż jedna</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<label>Wpisz treść wiadomości</label>
+										<textarea class="form-control" rows="6"></textarea>
+									</div>
+									<div class="mt-3">
+										<button class="btn btn-secondary">Wysyłam!</button>
+									</div>
+								</div>
+							
+							</form>
+
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+
+			</div>
+		</section>
+
+
+<!-- INSTAGRAM -->
+
+
+		<section class="py-5 aboutme-shadow border-top border-bottom">
+			<h3 class="subpage-head">Instagram Feeds</h3>
+			<p class="subpage-p pb-5 border-bottom">
+				Sprawdz moje najnowsze posty</p>
+		
+		
+			
+			<div class="container mb-4 p-4">
+				<figure data-behold-id="9wVDpXZ8L0pX5JSxcW1N"></figure>
+				<!-- <div id="carouselExample"
+						 class="carousel slide" 
+						 data-bs-ride="carousel" 
+						 data-bs-pause="hover">
+						<div class="carousel-instagram carousel-inner text-center pb-5 border-bottom">
+							<div class="carousel-item active h-auto"
+								 data-bs-interval="5000">
+								 <div id="instafeed-container"></div>
+								 <figure data-behold-id="9wVDpXZ8L0pX5JSxcW1N"></figure>
+							</div>
+							<div class="carousel-item h-auto"
+								 data-bs-interval="5000">
+								 <div id="instafeed-container-snd"></div>	
+							</div>
+
+				</div> -->
+			</div
+		</section>
+		</main>
+
+<!-- STOPKA -->
+
+		<footer class="aboutme-shadow">
+			<p class="py-4 mb-0 text-center">
+				&copy;
+				<span class="footerText">2023 Justyna Marciniszyn-Lewinska</span>
+				<span class="footerSocials"
+					>||
+					<a
+						class="footerSocials" target=”_blank” 
+						href="https://www.facebook.com/justyna.marciniszyn"
+						><i class="fa-brands fa-square-facebook"></i
+					></a>
+					<a
+						class="footerSocials" target=”_blank” 
+						href="https://www.instagram.com/miedzy_promykami_fotografia/"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					||
+					<i class="footer fa-regular fa-envelope"></i> </span
+				><span class="footerEmail">miedzypromykami.fotografia@gmail.com</span>
+			</p>
+		</footer>
+
+	<!-- SCRIPTS -->	
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+			integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+			integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+			crossorigin="anonymous"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script> -->
+		<script src="https://w.behold.so/widget.js" type="module"></script>
+
+		<script src="/js/script.js"></script>
+	</body>
+</html>

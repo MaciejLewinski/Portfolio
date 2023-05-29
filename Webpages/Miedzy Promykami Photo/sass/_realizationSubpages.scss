@@ -1,0 +1,27 @@
+// Sesja wizerunkowa
+
+.imageSession-box-magda {
+    background-image: url(../media/Realizacje/Wizerunkowa/Magda.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.imageSession-box-karolina {
+    background-image: url(../media/Realizacje/Wizerunkowa/karolina.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.imageSession-box-maciej{
+    background-image: url(../media/Realizacje/Wizerunkowa/Maciej.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+// MAGDA
+
+.magda {
+    transition: opacity 0.5s;
+}
+.magda:hover {
+        opacity: 70%;
+}
