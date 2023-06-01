@@ -31,6 +31,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap"
 			rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200;1,300&display=swap" rel="stylesheet">
 
 		<!-- ------------------------------------- -->
 		<script
@@ -39,60 +40,138 @@
 		<link rel="stylesheet" href="/css/style.css" />
 	</head>
 	<body data-bs-spy="scroll" data-bs-target="navbar-scroll">
-		<header id="home">
-			<img
-				class="home-img"
-				src="/media/MaciejSepia.JPG"
-				alt="Zdjęcie Macieja Lewińskiego"/>
-			<nav class="navbar navbar-expand-lg py-3 sticky-top" id="navbar-scroll">
-				<div class="container">
-					<a class="navbar-brand" href="#home">
-						<span class="logoText">Maciej Lewiński</span>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav ms-auto">
-							<a class="nav-link px-lg-3" href="#home">Home</a>
-							<a class="nav-link px-lg-3" href="#Omnie">O mnie</a>
-							<a class="nav-link px-lg-3" href="#CV">CV</a>
-							<a class="nav-link px-lg-3" href="#Portfolio">Portfolio</a>
-							<a class="nav-link px-lg-3" href="#kontakt">Kontakt</a>
-						</div>
+		<div class="sticky-box sticky-top"><img
+			class="home-img"
+			src="/media/MaciejSepia.JPG"
+			alt="Zdjęcie Macieja Lewińskiego" />
+		</div>
+		<nav class="navbar navbar-expand-lg py-3 sticky-top" id="navbar-scroll">
+			<div class="container">
+				<a class="navbar-brand" href="#home">
+					<span class="logoText">Maciej Lewiński</span>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto">
+						<a class="nav-link px-lg-3 active" href="#home">Home</a>
+						<a class="nav-link px-lg-3" href="#aboutMe">O mnie</a>
+						<a class="nav-link px-lg-3" href="#cv">CV</a>
+						<a class="nav-link px-lg-3" href="#Portfolio">Portfolio</a>
+						<a class="nav-link px-lg-3" href="#kontakt">Kontakt</a>
 					</div>
 				</div>
-			</nav>
-			<div class="social-box-wrapper">
-				<div class="social-box container">
+			</div>
+		</nav>
+<header id="home">
+		<div class="social-box-wrapper">
+			<div class="social-box container">
 				<ul class="social-list">
 					<li class="social-icon facebook">
-						<a href="https://www.facebook.com/maciej.lewinski.31" target=”_blank”
-							><i class="fa fa-brands fa-facebook-f fa-2xl"></i
+						<a
+							href="https://www.facebook.com/maciej.lewinski.31"
+							target="”_blank”"
+							><i class="fa fa-brands fa-facebook fa-2xl"></i
 						></a>
 					</li>
 					<li class="social-icon email">
-						<i onclick="copyEmail()" class="fa fa-email fa-solid fa-envelope fa-2xl">
+						<i
+							onclick="copyEmail()"
+							class="fa fa-email fa-solid fa-envelope fa-2xl">
 							<p id="textBubble">maciejleee@gmail.com</p>
 							<p id="textBubbleInfo">Click on evelope to copy email</p>
-							<input type="text" value="maciejleee@gmail.com" id="copyEmail" hidden></i>
+							<input
+								type="text"
+								value="maciejleee@gmail.com"
+								id="copyEmail"
+								hidden
+						/></i>
 					</li>
 					<li class="social-icon github">
-						<a href="https://github.com/MaciejLewinski" target=”_blank”
+						<a href="https://github.com/MaciejLewinski" target="”_blank”"
 							><i class="fa fa-brands fa-github fa-2xl"></i
 						></a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		</header>
+	</header>
+	
+	<section id="aboutMe" class="aboutme-info">
+		<div class="container text-center">
+			<div class="row align-items-end">
+			  <div class="aboutMe-textBox">
+				<h3 class="aboutme-h">O mnie</h3>
+					<p class="aboutme-text py-3 border-top border-bottom">
+						Cześć! Mam na imię Maciek i mam 28 lat. Jestem mężem wspaniałej drugiej połówki - Justyny. Moje życie rozwesela również dobry przyjaciel królik - Speedy.
+					</p>
+					<p class="aboutme-text py-3 border-bottom">
+					Hobby, które są w wolnych chwilach moją pasją odzwierciedlają niektóre cechy mego charakteru, jak i również podkreślają te pomocne w wykonywaniu pracy. Jednym z nich jest modelarstwo, przejawiające się kreatywnością, planowaniem, zręcznością i cierpliwością. Drugim - militaria - pozwalające nabrać do siebie dystansu, szlifujące pracę w grupie, słuchania i wykonywania "rozkazów". Trzecim - sport - poprzez dyscypliny drużynowe, rozwijający kontakt z innymi, zgranie i poznanie swojego miejsca w drużynie.
+					</p>
+			  </div>
+			  <div class="aboutMe-textBox">
+				<h3 class="aboutme-h">Moje doświadczenie</h3>
+					<p class="aboutme-text py-3 border-top border-bottom">
+						Jestem absolwentem studiów magisterskich na Wydziale Geoinżynierii, Górnictwa i Geologii Politechniki Wrocławskiej. Scieżkę kariery wybrałem jednak inną. Nidgy nie bałem się podejmować nowych wyzwań.
+					</p>
+					<p class="aboutme-text py-3 border-bottom">
+					Post-studenckie poszukiwanie pracy zaprowadziło mnie do firmy Becton & Dickinson. Tam, przez ponad 3 lata rozwijałem swoje umiejętności pracy w grupie, pracy na projektach, wdrażaniu nowych technologii i usprawnień do instniejących procesów, kontaktów z Vendorami, testowania nowych systemów (SAP ERP, SAP HANA) i aktywnego uczestniczenia (jako klient) w ich projektowaniu, analizowania danych biznesowych i przygotowywania raportów.
+					</p>
+			  </div>
+			  <div class="aboutMe-textBox">
+				<h3 class="aboutme-h">Moje plany</h3>
+				<p class="aboutme-text py-3 border-top border-bottom">
+					Czas przygody w BD dobiegł końca i aktualnie wdrażam się w świat programowania. Moim celem na najbliższe lata jest posiadanie takiej wiedzy oraz doświadczenia, aby moć nazwać się FrontEnd Developerem. Rozpatrująć długoletnie plany zawodowe, dążyć będe do pozycji FullStack Develowepa, opanowujac FontEnd, jaki BackEnd, nie po to aby być samowystarczalnym, lecz aby lepiej rozumieć zachodzące procesy i móc brać udział w każdej części projektu.
+				</p>
+				<p class="aboutme-text py-3 border-bottom">
+					Aktualnie ćwiczę pisanie kodu w Vanilla JavaScript, natomiast stawiam również pierwsze kroki w React i jest to Framework, w którym aktualnie chce się rozwijać. Uczę się również implementowania i korzystania z gotowych komponentów, jakie oferuje np. BootStrap.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		
+	</section>
+
+		<section id="cv">
+			<div class="cv-box container-fluid">
+				<div class="wrapper">
+					<div class="card spring active" data-season="spring">
+						<div class="text">
+							<h2>spring</h2>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+					<div class="card summer" data-season="summer">
+						<div class="text">
+							<h2>summer</h2>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+					<div class="card autumn" data-season="autumn">
+						<div class="text">
+							<h2>autumn</h2>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+					<div class="card winter" data-season="winter">
+						<div class="text">
+							<h2>winter</h2>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+		</section>
+
 		<!-- SCRIPTS -->
 
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
