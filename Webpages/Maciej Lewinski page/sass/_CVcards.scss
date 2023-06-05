@@ -1,34 +1,40 @@
 
 :root {
-	--spring-color: #5bca5b;
-	--summer-color: #ffd900;
-	--autumn-color: #e09213;
-	--winter-color: #4198df;
+	--aboutContact-color: #636262;
+	--exp-color: #d3cdb2;
+	--education-color: #545468;
+	--skills-color: #72a5ce;
+	--courses-color: #5f5050;
 }
 
-[data-bg='spring'] {
-	background-color: var(--spring-color);
+[data-bg='aboutContact'] {
+	background-color: var(--aboutContact-color);
 }
 
-[data-bg='summer'] {
-	background-color: var(--summer-color);
+[data-bg='exp'] {
+	background-color: var(--exp-color);
 }
 
-[data-bg='autumn'] {
-	background-color: var(--autumn-color);
+[data-bg='education'] {
+	background-color: var(--education-color);
 }
 
-[data-bg='winter'] {
-	background-color: var(--winter-color);
+[data-bg='skills'] {
+	background-color: var(--skills-color);
+}
+[data-bg='courses'] {
+	background-color: var(--courses-color);
 }
 
 .wrapper {
 	display: flex;
 	padding: 0.5em;
-	width: 1200px;
-	background-color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgb(210, 210, 210);
 	border-radius: 10px;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .card {
@@ -54,26 +60,31 @@
 	transition: opacity 0.5s;
 }
 
-.spring {
-	background-image: url('https://cdn.pixabay.com/photo/2016/04/12/10/55/blossom-1324088_960_720.jpg');
+.aboutContact {
+	background-image: url('/media/MaciejOrginal.JPG');
 }
 
-.summer {
-	background-image: url('https://cdn.pixabay.com/photo/2013/10/07/18/06/field-192179_960_720.jpg');
+.exp {
+	background-image: url('/media/experience.jpg');
 }
 
-.autumn {
-	background-image: url('https://cdn.pixabay.com/photo/2019/03/31/21/43/the-dark-hedges-4094148_960_720.jpg');
+.education {
+	background-image: url('/media/GraduationMaster.jpg');
 }
 
-.winter {
-	background-image: url('https://cdn.pixabay.com/photo/2018/05/04/07/55/snow-3373432_960_720.jpg');
+.skills {
+	background-image: url('/media/Skills.jpg');
+	
+}
+.courses {
+	background-image: url('/media/courses.jpg');
 }
 
-.spring::before,
-.summer::before,
-.autumn::before,
-.winter::before {
+.aboutContact::before,
+.exp::before,
+.education::before,
+.skills::before,
+.courses::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -83,20 +94,23 @@
 	content: '';
 }
 
-.spring::before {
-	background-color: var(--spring-color);
+.aboutContact::before {
+	background-color: var(--aboutContact-color);
 }
 
-.summer::before {
-	background-color: var(--summer-color);
+.exp::before {
+	background-color: var(--exp-color);
 }
 
-.autumn::before {
-	background-color: var(--autumn-color);
+.education::before {
+	background-color: var(--education-color);
 }
 
-.winter::before {
-	background-color: var(--winter-color);
+.skills::before {
+	background-color: var(--skills-color);
+}
+.courses::before {
+	background-color: var(--courses-color);
 }
 
 .text {
@@ -104,7 +118,7 @@
 	left: 50%;
 	bottom: 10%;
 	transform: translateX(-50%);
-	width: 80%;
+	width: auto;
 	padding: 2em;
 	color: #fff;
 	border-radius: 6px;
@@ -118,8 +132,14 @@
 
 .text p {
 	display: none;
+	text-align: center;
+	letter-spacing: 2px;
 	opacity: 0;
 	font-size: 1.6rem;
+}
+
+.btnDownload {
+	display: none;
 }
 
 .active {
@@ -138,6 +158,14 @@
 	display: block;
 	animation: show-text 1s 0.2s forwards;
 }
+.active .btnDownload {
+	display: block;
+	margin: 0 auto;
+	padding: 4px;
+	background-color: rgba(145, 145, 145, 0.7);
+	font-size: 1.5rem;
+}
+
 
 .card.active::after {
 	opacity: 0;
