@@ -40,7 +40,7 @@ addEventListener;
 // NAVBAR Scroll
 
 const navbar = document.querySelector('.navbar');
-const socialBoxFb = document.querySelector('.fa-facebook');
+const socialBoxLn = document.querySelector('.fa-linkedin-in');
 const socialBoxMail = document.querySelector('.fa-email');
 const socialBoxGit = document.querySelector('.fa-github');
 const textemail = document.querySelector('#textBubble');
@@ -48,7 +48,7 @@ const textinfo = document.querySelector('#textBubbleInfo');
 window.onscroll = () => {
 
     if (window.scrollY > 40) {
-		socialBoxFb.classList.add('fa-scroll');	
+		socialBoxLn.classList.add('fa-scroll');	
 		socialBoxMail.classList.add('fa-scroll');	
 		socialBoxGit.classList.add('fa-scroll');	
 		textemail.classList.add('textBubbleScroll');	
@@ -56,7 +56,7 @@ window.onscroll = () => {
 		navbar.classList.add('nav-colored');
 	}
 	else {
-		socialBoxFb.classList.remove('fa-scroll');
+		socialBoxLn.classList.remove('fa-scroll');
 		socialBoxMail.classList.remove('fa-scroll');
 		socialBoxGit.classList.remove('fa-scroll');
 		textemail.classList.remove('textBubbleScroll');	
@@ -85,3 +85,41 @@ const handleBgColor = card => {
 }
 
 cards.forEach(card => card.addEventListener('click', showCard))
+
+// AKORDEON
+
+const accordion = document.querySelector('.accordion')
+const accordionBtns = document.querySelectorAll('.accordion-btn')
+
+function openAccordionItems() {
+
+	if(this.nextElementSibling.classList.contains('active')) {
+		this.nextElementSibling.classList.remove('active')
+	} else {
+
+		closeAccordionItem()
+		this.nextElementSibling.classList.toggle('active')
+		
+	}
+	
+}
+
+const closeAccordionItem = () => {
+	const allActiveItems = document.querySelectorAll('.accordion-info')
+	allActiveItems.forEach(item => item.classList.remove('active'))
+}
+
+const clickOutsideAccordion = e => {
+    if (
+		e.target.classList.contains('accordion-btn') ||
+		e.target.classList.contains('accordion-info') ||
+		e.target.classList.contains('accordion-info-text')
+	)
+		return
+
+	closeAccordionItem()
+}
+
+accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
+
+window.addEventListener('click', clickOutsideAccordion)
