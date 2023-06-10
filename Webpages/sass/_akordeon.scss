@@ -1,0 +1,51 @@
+
+.fas,
+.far {
+	margin-right: 20px;
+	color: rgba(145, 145, 145, 0.7);
+}
+
+.accordion {
+	width: 1000px;
+    margin: 0 auto;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.accordion-box {
+	margin: 20px;
+}
+
+.accordion-btn {
+	padding: 1em;
+	width: 100%;
+	font-size: 30px;
+	text-align: left;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.accordion-btn:hover,
+.accordion-btn:focus {
+	background-color:rgb(210, 210, 210);
+	color: #fff;
+	outline: none;
+}
+
+.accordion-btn:hover .fas,
+.accordion-btn:hover .far,
+.accordion-btn:focus .fas,
+.accordion-btn:focus .far {
+	color: #fff;
+}
+
+.accordion-info {
+	display: none;
+	padding: 1em 2em;
+}
+
+.active {
+	display: block;
+}

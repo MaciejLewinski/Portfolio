@@ -1,0 +1,238 @@
+@import './CVcards';
+@import './akordeon';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+$nav-color: lime;
+
+html {
+	font-size: 62.5%;
+}
+body {
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+}
+header {
+	width: 100vw;
+	height: 100vh;
+}
+[id] {
+	scroll-margin: 72px;
+}
+
+// FONTS
+// font-family: 'Beau Rivage', cursive;
+// font-family: 'Estonia', cursive;
+// font-family: 'Italianno', cursive;
+// font-family: 'Moon Dance', cursive;
+// font-family: "Poppins", sans-serif;
+// font-family: "Tangerine", cursive;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Cardo', serif;
+// font-family: 'Roboto Mono', monospace;
+
+// Navigacja
+
+nav.navbar {
+	border-bottom: 0.1px solid rgba(145, 145, 145, 0.4);
+	transition: background-color 0.5s;
+}
+nav.navbar:hover {
+	background-color: rgba(100, 100, 100, 0.8);
+}
+.nav-colored {
+	background-color: rgba(80, 80, 80, 0.8);
+}
+
+div.navbar-nav {
+	text-transform: uppercase;
+}
+a.nav-link {
+	font-size: 1.5rem;
+	letter-spacing: 5px;
+	color: azure;
+}
+.logoText {
+	font-size: 3rem;
+	color: rgb(201, 201, 201);
+	letter-spacing: 5px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.navbar-toggler {
+	font-size: 3rem;
+	background-color: rgba(240, 255, 255, 0.5);
+}
+
+// HOME
+
+.home-img {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	filter: brightness(0.8);
+	z-index: -1;
+}
+.social-box {
+	position: fixed;
+	height: auto;
+	width: auto;
+	bottom: 0;
+	margin-bottom: 50px;
+	
+	// margin-bottom: 50px;
+}
+.sticky-box {
+	z-index: -1;
+}
+
+.social-box-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+}
+
+ul.social-list {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+.social-list > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.fa {
+	color: rgba(240, 255, 255, 0.7);
+	font-size: 4rem;
+	padding: 10px;
+	transition: color 0.5s, font-size 0.5s;
+}
+.fa:hover {
+	color: rgba(240, 255, 255);
+	font-size: 4.2rem;
+}
+
+.fa-scroll {
+	color: rgba(145, 145, 145, 0.7);
+	font-size: 2rem;
+	padding: 10px;
+	transition: color 0.5s, font-size 0.5s;
+}
+.fa-scroll:hover {
+	color: rgba(180, 180, 180);
+	font-size: 4rem;
+}
+// EMAIL BUTTON ANIMATION
+
+.email {
+	position: relative;
+}
+#textBubble {
+	position: absolute;
+	transform-origin: 0% 0% 100% 0%;
+	padding: 20px;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.8rem;
+	left: -110px;
+	top: -60px;
+	transform: scale(0);
+	animation-fill-mode: forwards;
+}
+#textBubbleInfo {
+	position: absolute;
+	width: 200px;
+	transform-origin: 0% 0% 100% 0%;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	left: -58px;
+	top: 50px;
+	transform: scale(0);
+	animation-fill-mode: forwards;
+}
+
+.textBubbleScroll {
+	color: rgba(145, 145, 145);
+}
+.textBubbleInfoScroll {
+	color: rgba(145, 145, 145);
+	
+}
+
+@keyframes expand-bounce {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.25);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes shrink {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+// ABOUT ME
+
+.aboutme-info {
+	background-color: rgb(210, 210, 210);
+}
+.aboutme-info .container {
+	padding: 1em 0.5em;
+}
+.aboutme-text {
+	margin: 5px 0;
+	letter-spacing: 1px;
+}
+.aboutme-h {
+	margin: 30px 0;
+	font-size: 2.6rem;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
+}
+.aboutme-img {
+	height: 400px;
+	width: 500px;
+	object-fit: cover;
+}
+
+// CV
+
+#cv {
+	height: auto;
+	padding: 50px 0;
+	background-color: rgb(230, 230, 230);
+}
+
+a.card-link {
+	color: #fff;
+	text-decoration: none;
+}
